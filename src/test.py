@@ -6,7 +6,7 @@ import cvzone
 model = YOLO("model/best.pt")
 
 # Open webcam
-cap = cv2.VideoCapture(0) # this is the source 
+cap = cv2.VideoCapture(1) # this is the source (use 0 for webcam or 1 for other cams connected)
 
 # Optional webcam settings
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
